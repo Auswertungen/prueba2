@@ -1,6 +1,6 @@
 // 1. Define el nombre de usuario y la clave para el localStorage
-let usuario = prompt ("Por favor introduce tu usuario") ; // Reemplaza con el nombre del usuario real
-const claveVisitada = `paginaVisitada_${usuario}`;
+let usuario1 = prompt ("Por favor introduce tu usuario") ; // Reemplaza con el nombre del usuario real
+const claveVisitada = `paginaVisitada_${usuario1}`;
 
 // 2. Al cargar la página, verifica si el usuario ha visitado la página
 window.onload = function() {
@@ -16,7 +16,7 @@ window.onload = function() {
     // O mostrar un mensaje en la página:
     document.getElementById("contenido-restricto").style.display = "none";
     document.getElementById("mensaje-ya-visto").style.display = "block";
-   usuario=null;
+   usuario="";
     window.close(); 
   } else {
     // Si es la primera vez que visita, guarda el estado
@@ -26,4 +26,5 @@ window.onload = function() {
     document.getElementById("mensaje-ya-visto").style.display = "none";
   }
 };
+
 
