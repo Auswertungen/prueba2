@@ -16,6 +16,7 @@ window.onload = function() {
     // O mostrar un mensaje en la página:
     document.getElementById("contenido-restricto").style.display = "none";
     document.getElementById("mensaje-ya-visto").style.display = "block";
+   usuario=null;
     window.close(); 
   } else {
     // Si es la primera vez que visita, guarda el estado
@@ -25,3 +26,4 @@ window.onload = function() {
     document.getElementById("mensaje-ya-visto").style.display = "none";
   }
 };
+
